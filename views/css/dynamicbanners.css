@@ -1,0 +1,371 @@
+/* DYNAMIC BANNERS - STYLES GÉNÉRAUX */
+
+.dynamic-banners {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.dynamic-banners * {
+    box-sizing: border-box;
+}
+
+/* STYLES DE BASE POUR TOUTES LES BANNIÈRES */
+
+.banner-item {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.banner-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.banner-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* BANNIÈRES PAGE D'ACCUEIL - STYLES SPÉCIFIQUES */
+
+.home-banners {
+    text-align: center;
+}
+
+.banner-home {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.banner-home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.banner-home img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-home .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 20px 15px;
+    text-align: left;
+}
+
+.banner-home .banner-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* BANNIÈRES FOOTER - STYLES SPÉCIFIQUES */
+
+.footer-banners {
+    background: #f8f9fa;
+    padding: 20px 0;
+    border-top: 2px solid #dee2e6;
+    text-align: center;
+}
+
+.banner-footer {
+    display: inline-block;
+    margin: 0 15px;
+    text-align: center;
+    vertical-align: top;
+    transition: transform 0.2s ease;
+}
+
+.banner-footer:hover {
+    transform: scale(1.05);
+}
+
+.banner-footer img {
+    max-width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px;
+    border-radius: 5px;
+    border: 2px solid #dee2e6;
+}
+
+.banner-footer span {
+    display: block;
+    font-size: 12px;
+    color: #6c757d;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/*  */
+/* BANNIÈRES PANIER - STYLES SPÉCIFIQUES */
+
+.cart-banners {
+    margin: 15px 0;
+}
+
+.banner-cart {
+    margin-bottom: 10px;
+}
+
+.banner-cart .alert {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #b8daff;
+    background-color: #d1ecf1;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.banner-cart .alert:hover {
+    background-color: #c6e9f1;
+    border-color: #9fcdff;
+}
+
+.banner-cart a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #0c5460;
+}
+
+.banner-cart strong {
+    flex: 1;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.banner-cart img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #bee5eb;
+}
+
+
+/* BANNIÈRES HEADER - STYLES SPÉCIFIQUES */
+
+.header-banners {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.banner-header {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.banner-header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner-header img {
+    max-width: 30px;
+    height: auto;
+    border-radius: 3px;
+}
+
+
+/* BANNIÈRES NAVIGATION - STYLES SPÉCIFIQUES */
+
+
+.nav-banners {
+    background: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.banner-nav {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.banner-nav a {
+    color: #495057;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* DESIGN RESPONSIVE - MOBILE & TABLETTE */
+
+
+@media (max-width: 768px) {
+    .dynamic-banners {
+        margin: 15px 0;
+    }
+    
+    .banner-item {
+        margin-bottom: 10px;
+    }
+    
+    /* Accueil - Mobile */
+    .banner-home {
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+    
+    .banner-home .banner-content {
+        padding: 15px 10px;
+    }
+    
+    .banner-home .banner-content h3 {
+        font-size: 14px;
+    }
+    
+    /* Footer - Mobile */
+    .footer-banners {
+        padding: 15px 0;
+    }
+    
+    .banner-footer {
+        margin: 5px 8px;
+        display: block;
+    }
+    
+    .banner-footer img {
+        max-width: 60px;
+    }
+    
+    .banner-footer span {
+        font-size: 11px;
+    }
+    
+    /* Panier - Mobile */
+    .banner-cart .alert {
+        padding: 10px;
+    }
+    
+    .banner-cart a {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .banner-cart strong {
+        margin-right: 0;
+        margin-bottom: 8px;
+        font-size: 13px;
+    }
+    
+    .banner-cart img {
+        max-width: 60px;
+    }
+    
+    /* Header - Mobile */
+    .header-banners {
+        padding: 8px 0;
+    }
+    
+    .banner-header {
+        margin: 0 5px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .banner-header a {
+        font-size: 12px;
+    }
+    
+    .banner-header img {
+        max-width: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dynamic-banners {
+        margin: 10px 0;
+    }
+    
+    .footer-banners {
+        padding: 12px 0;
+    }
+    
+    .banner-home .banner-content h3 {
+        font-size: 13px;
+    }
+    
+    .banner-cart img {
+        max-width: 50px;
+    }
+    
+    .banner-footer {
+        margin: 3px 5px;
+    }
+    
+    .banner-footer img {
+        max-width: 50px;
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Délai d'animation pour les bannières multiples */
+.banner-item:nth-child(1) { animation-delay: 0.1s; }
+.banner-item:nth-child(2) { animation-delay: 0.2s; }
+.banner-item:nth-child(3) { animation-delay: 0.3s; }
+.banner-item:nth-child(4) { animation-delay: 0.4s; }
+
+
+.banner-item a:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+.banner-item img {
+    alt: "Bannière promotionnelle";
+}
+
+
+/* Support pour les vieux navigateurs */
+.banner-home .banner-content {
+    background: rgba(0,0,0,0.7); /* Fallback */
+}
+
+/* Support Flexbox pour IE */
+.banner-cart a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
